@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import ValueProposition from './components/ValueProposition';
 import ClientReferences from './components/ClientReferences';
-import Benefits from './components/Benefits';
 import PricingTable from './components/PricingTable';
 import TrialOffer from './components/TrialOffer';
 import ContactForm from './components/ContactForm';
@@ -312,7 +311,6 @@ function App() {
       <Hero />
       <ValueProposition />
       <ClientReferences />
-      <Benefits />
       <PricingTable />
       <TrialOffer />
       <ContactForm />

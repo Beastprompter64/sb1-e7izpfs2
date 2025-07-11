@@ -160,11 +160,11 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="mt-10 flex justify-center items-center gap-4 flex-wrap fade-in fade-in-delay-2">
-            <a href="#contact" className="hero-cta-primary inline-block rounded-md px-6 py-3 text-base font-semibold text-white shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-              <span>Lancer mon projet →</span>
+            <a href="#trial" className="hero-cta-primary inline-block rounded-md px-6 py-3 text-base font-semibold text-white shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              <span>3.500 € de crédit offert →</span>
             </a>
-            <a href="#trial" className="inline-block rounded-md border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 hover:bg-gray-100 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-transform transform hover:scale-105">
-              Découvrir le Sprint Test
+            <a href="#contact" className="inline-block rounded-md border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 hover:bg-gray-100 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-transform transform hover:scale-105">
+             J'accélère mon projet
             </a>
           </div>
         </div>
@@ -196,7 +196,7 @@ const Hero: React.FC = () => {
                     <stop offset="100%" style={{stopColor:'#3b82f6'}} />
                   </linearGradient>
                 </defs>
-                <path d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.75A.75.75 0 013 4.5h.75m0 0H21m-9 12.75h5.25m-5.25 0h-5.25m5.25 0V15m0 3.75V15m0 0H9m5.25 0h5.25M9 15h5.25" stroke="url(#iconGradient2)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="url(#iconGradient2)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
             <h3 className="text-lg font-bold text-gray-900">Coûts Optimisés</h3>

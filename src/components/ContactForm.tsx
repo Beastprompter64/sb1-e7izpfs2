@@ -12,18 +12,32 @@ const ContactForm: React.FC = () => {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    console.log('Form data submitted:', data);
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    reset();
-    
-    // Reset submission status after 5 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-    }, 5000);
+    try {
+      const response = await fetch('https://arkedown.app.n8n.cloud/webhook/063e4d4c-f023-440f-b16a-7caecc3a9c27', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        reset();
+        
+        // Reset submission status after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      } else {
+        throw new Error('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // You could add error state handling here if needed
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

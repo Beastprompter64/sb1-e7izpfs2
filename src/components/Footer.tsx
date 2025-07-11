@@ -46,18 +46,18 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Mail size={18} className="text-primary-300 mr-3 mt-1 flex-shrink-0" />
                 <a href="mailto:contact@digitalfactory.tech" className="text-gray-400 hover:text-white transition-colors">
-                  contact@digitalfactory.tech
+                  l.rakotoarison@etechconsulting-mg.com
                 </a>
               </li>
               <li className="flex items-start">
                 <Phone size={18} className="text-primary-300 mr-3 mt-1 flex-shrink-0" />
                 <a href="tel:+33123456789" className="text-gray-400 hover:text-white transition-colors">
-                  +33 1 23 45 67 89
+                  +33 7 57 94 00 30
                 </a>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="text-primary-300 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">Paris, France</span>
+                <span className="text-gray-400">Antananarivo, Madagascar</span>
               </li>
             </ul>
           </div>
@@ -65,11 +65,6 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Liens Rapides</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="#benefits" className="text-gray-400 hover:text-white transition-colors">
-                  Avantages
-                </a>
-              </li>
               <li>
                 <a href="#pricing" className="text-gray-400 hover:text-white transition-colors">
                   Tarifs
@@ -83,16 +78,6 @@ const Footer: React.FC = () => {
               <li>
                 <a href="#contact" className="text-gray-400 hover:text-white transition-colors">
                   Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Politique de Confidentialité
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Conditions d'Utilisation
                 </a>
               </li>
             </ul>

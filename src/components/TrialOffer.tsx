@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FileCheck, Star } from 'lucide-react';
+import CalendarBooking from './CalendarBooking';
 
 const TrialOffer: React.FC = () => {
   return (
@@ -52,12 +53,6 @@ const TrialOffer: React.FC = () => {
                       </span>
                       <span className="text-gray-700">Contact francophone dédié</span>
                     </li>
-                    <li className="flex items-start">
-                      <span className="flex-shrink-0 p-1 bg-teal-100 rounded-full mr-3 mt-0.5">
-                        <FileCheck size={16} className="text-teal-600" />
-                      </span>
-                      <span className="text-gray-700">Gratuit si vous signez sous 10 jours</span>
-                    </li>
                   </ul>
                 </div>
                 
@@ -65,14 +60,11 @@ const TrialOffer: React.FC = () => {
                   <div className="modern-card p-6">
                     <p className="text-sm uppercase font-semibold text-gray-500 mb-2">Offre d'Essai</p>
                     <div className="text-3xl md:text-4xl font-bold text-gradient-pulse mb-2">3 500€</div>
-                    <p className="text-sm text-gray-500 mb-6">(Gratuit si signature sous 10 jours)</p>
+                    <p className="text-sm text-gray-500 mb-6">Sprint d'essai 5 jours</p>
                     
-                    <a 
-                      href="#contact" 
-                      className="gradient-button w-full block text-center"
-                    >
-                      <span>Réserver Votre Essai</span>
-                    </a>
+                    <div className="w-full">
+                      <CalendarBooking />
+                    </div>
                   </div>
                 </div>
               </div>

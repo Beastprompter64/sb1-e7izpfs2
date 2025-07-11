@@ -36,7 +36,6 @@ const Header: React.FC = () => {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#benefits" className="font-medium text-gray-700 hover:text-teal-600 transition-colors">Avantages</a>
             <a href="#pricing" className="font-medium text-gray-700 hover:text-teal-600 transition-colors">Tarifs</a>
             <a href="#trial" className="font-medium text-gray-700 hover:text-teal-600 transition-colors">Offre d'Essai</a>
             <a href="#contact" className="font-medium text-gray-700 hover:text-teal-600 transition-colors">Contact</a>
@@ -58,13 +57,6 @@ const Header: React.FC = () => {
         }`}
       >
         <div className="container mx-auto px-4 flex flex-col space-y-4">
-          <a 
-            href="#benefits" 
-            className="font-medium text-gray-700 hover:text-teal-600 transition-colors py-2"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Avantages
-          </a>
           <a 
             href="#pricing" 
             className="font-medium text-gray-700 hover:text-teal-600 transition-colors py-2"
