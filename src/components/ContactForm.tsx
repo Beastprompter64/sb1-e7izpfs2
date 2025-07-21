@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
-import { Send, CheckCircle } from 'lucide-react';
+import { Send, CheckCircle, Sparkles } from 'lucide-react';
 import { FormData } from '../types';
+import ConfettiExplosion from 'react-confetti-explosion';
 
 const ContactForm: React.FC = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
   
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
@@ -23,12 +25,14 @@ const ContactForm: React.FC = () => {
 
       if (response.ok) {
         setIsSubmitted(true);
+        setShowConfetti(true);
         reset();
         
-        // Reset submission status after 5 seconds
+        // Reset submission status after 8 seconds
         setTimeout(() => {
           setIsSubmitted(false);
-        }, 5000);
+          setShowConfetti(false);
+        }, 8000);
       } else {
         throw new Error('Failed to submit form');
       }
@@ -68,15 +72,42 @@ const ContactForm: React.FC = () => {
           >
             {isSubmitted ? (
               <div className="text-center py-10">
+                {showConfetti && (
+                  <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
+                    <ConfettiExplosion
+                      force={0.8}
+                      duration={3000}
+                      particleCount={150}
+                      width={1600}
+                      colors={['#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3', '#ff6b6b']}
+                    />
+                  </div>
+                )}
                 <div className="flex justify-center mb-4">
                   <div className="gradient-icon-container">
-                    <CheckCircle size={48} className="text-teal-600" />
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ type: "spring", stiffness: 200, damping: 10 }}
+                    >
+                      <CheckCircle size={48} className="text-teal-600" />
+                    </motion.div>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Envoyé !</h3>
+                <motion.h3 
+                  className="text-3xl font-bold text-gradient-pulse mb-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  🎉 Félicitations ! Message Envoyé !
+                </motion.h3>
                 <p className="text-gray-700">
-                  Merci de nous avoir contactés. Nous vous répondrons sous 24 heures.
+                  Merci de nous avoir contactés. Nous vous répondrons sous 24 heures avec une surprise spéciale !
                 </p>
+                <div className="mt-4 flex justify-center">
+                  <Sparkles className="text-yellow-500 animate-pulse" size={24} />
+                </div>
               </div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)}>
@@ -196,7 +227,7 @@ const ContactForm: React.FC = () => {
                       </>
                     ) : (
                       <>
-                        <span>Envoyer le Message</span> <Send size={18} className="ml-2" />
+                        <span>🚀 Obtenir ma Consultation Gratuite</span> <Send size={18} className="ml-2" />
                       </>
                     )}
                   </button>

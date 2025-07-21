@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { pricingPackages } from '../data/pricing';
+import InteractivePricingCalculator from './InteractivePricingCalculator';
 
 const PricingTable: React.FC = () => {
   return (
@@ -27,6 +28,8 @@ const PricingTable: React.FC = () => {
             Tarification transparente sans frais cachés. Choisissez le forfait qui correspond à vos besoins.
           </motion.p>
         </div>
+        
+        <InteractivePricingCalculator />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {pricingPackages.map((pkg, index) => (
@@ -78,7 +81,7 @@ const PricingTable: React.FC = () => {
                   pkg.isPopular ? 'shadow-lg' : ''
                 }`}
               >
-                <span>Commencer</span>
+                <span>🎯 Choisir mon Pack</span>
               </a>
             </motion.div>
           ))}

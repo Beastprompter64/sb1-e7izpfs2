@@ -145,12 +145,24 @@ const FiberCanvas: React.FC = () => {
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero-section">
-      <FiberCanvas />
+    <section className="hero-section relative overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-20"
+        >
+          <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=139&oauth2_token_id=57447761" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/90 to-white/80"></div>
+      </div>
       
       <div className="relative z-10 isolate mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-black tracking-tight text-gray-900 fade-in">
             <span className="text-gradient">Lancez vos produits 2x plus vite pour la moitié du coût.</span>
             <span className="block mt-2 md:mt-4">Sans recruter.</span>
           </h1>
@@ -164,8 +176,15 @@ const Hero: React.FC = () => {
               <span>3.500 € de crédit offert →</span>
             </a>
             <a href="#contact" className="inline-block rounded-md border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 hover:bg-gray-100 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-transform transform hover:scale-105">
-             J'accélère mon projet
+             🚀 Débloquer mon potentiel
             </a>
+            
+            {/* Visual cue arrow */}
+            <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+              <svg className="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </div>
           </div>
         </div>
 
