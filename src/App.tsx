@@ -1,6 +1,13 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
+// Declare gtag function for TypeScript
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
+
 import Hero from './components/Hero';
 import ValueProposition from './components/ValueProposition';
 import ClientReferences from './components/ClientReferences';
@@ -395,6 +402,13 @@ const ScrollToAnchor = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Track page view in Google Analytics
+    if (typeof gtag !== 'undefined') {
+      gtag('config', 'G-71912C8Z7H', {
+        page_path: location.pathname + location.search + location.hash,
+      });
+    }
+
     if (location.hash) {
       // Remove the # from the hash to get the element ID
       const elementId = location.hash.substring(1);
