@@ -59,7 +59,7 @@ const TrialOffer: React.FC = () => {
                 <div className="md:w-1/3 text-center">
                   <div className="modern-card p-6">
                     <p className="text-sm uppercase font-semibold text-gray-500 mb-2">Offre d'Essai</p>
-                    <div className="text-3xl md:text-4xl font-bold text-gradient-pulse mb-2">3 500€</div>
+                    <div className="text-3xl md:text-4xl font-bold text-gradient-pulse mb-2">Une feature gratuite</div>
                     <p className="text-sm text-gray-500 mb-6">Sprint d'essai 5 jours</p>
                     
                     <div className="w-full">

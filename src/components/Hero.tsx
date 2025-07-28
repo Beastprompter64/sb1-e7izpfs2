@@ -163,8 +163,8 @@ const Hero: React.FC = () => {
       <div className="relative z-10 isolate mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-black tracking-tight text-gray-900 fade-in">
-            <span className="text-gradient">Lancez vos produits 2x plus vite pour la moitié du coût.</span>
-            <span className="block mt-2 md:mt-4">Sans recruter.</span>
+            <span className="text-gradient">Votre Prochaine Fonctionnalité Gratuitement en 5 Jours.</span>
+            <span className="block mt-2 md:mt-4">Sans payer.</span>
           </h1>
 
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-gray-600 fade-in fade-in-delay-1">
@@ -173,7 +173,7 @@ const Hero: React.FC = () => {
 
           <div className="mt-10 flex justify-center items-center gap-4 flex-wrap fade-in fade-in-delay-2">
             <a href="#trial" className="hero-cta-primary inline-block rounded-md px-6 py-3 text-base font-semibold text-white shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-              <span>3.500 € de crédit offert →</span>
+              <span>Mon sprint test </span>
             </a>
             <a href="#contact" className="inline-block rounded-md border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 hover:bg-gray-100 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-transform transform hover:scale-105">
              🚀 Débloquer mon potentiel
