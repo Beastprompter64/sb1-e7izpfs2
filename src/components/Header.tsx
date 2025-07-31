@@ -16,6 +16,11 @@ const Header: React.FC = () => {
       title: "Google Cloud Platform",
       description: "Externalisez vos projets GCP",
       href: "/nos-cas-d-usages/google-cloud"
+    },
+    {
+      title: "Migration Magento",
+      description: "Passez à une stack moderne",
+      href: "/nos-cas-d-usages/magento"
     }
   ];
 

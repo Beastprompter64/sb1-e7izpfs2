@@ -16,6 +16,7 @@ import TrialOffer from './components/TrialOffer';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import GoogleCloudLandingPage from './pages/GoogleCloudLandingPage';
+import MagentoLandingPage from './pages/MagentoLandingPage';
 
 const GlobalStyles = () => (
   <style>{`
@@ -403,8 +404,8 @@ const ScrollToAnchor = () => {
 
   useEffect(() => {
     // Track page view in Google Analytics
-    if (typeof gtag !== 'undefined') {
-      gtag('config', 'G-71912C8Z7H', {
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('config', 'G-71912C8Z7H', {
         page_path: location.pathname + location.search + location.hash,
       });
     }
@@ -457,6 +458,7 @@ function App() {
           </>
         } />
         <Route path="/nos-cas-d-usages/google-cloud" element={<GoogleCloudLandingPage />} />
+        <Route path="/nos-cas-d-usages/magento" element={<MagentoLandingPage />} />
       </Routes>
       <Footer />
     </Router>

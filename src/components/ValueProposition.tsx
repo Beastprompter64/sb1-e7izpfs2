@@ -43,11 +43,15 @@ const ValueProposition: React.FC = () => {
             whileHover={{ y: -5 }}
           >
             <div className="gradient-icon-container w-fit mx-auto mb-6">
-              <CpuIcon className="text-teal-500" size={32} />
+              <svg className="text-teal-500" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Notre IA propriétaire</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Divisez Votre Budget Dev par 3</h3>
             <p className="text-gray-700">
-              Là où les autres ESN vous vendent juste des humains, nous avons bâti une IA qui accélère le cycle de dev de 40%. Concrètement : moins de bugs, des livraisons plus rapides et un code de meilleure qualité.
+              Accédez à une squad senior complète pour le prix d'un seul développeur junior à Paris. Un modèle simple, sans frais cachés.
             </p>
           </motion.div>
           
@@ -63,9 +67,9 @@ const ValueProposition: React.FC = () => {
             <div className="gradient-icon-container w-fit mx-auto mb-6">
               <Zap className="text-blue-500" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Une équipe autonome, pas un fardeau</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Notre IA propriétaire</h3>
             <p className="text-gray-700">
-              Oubliez le micro-management. Nos squads s'intègrent en mode 'plug & play' dans vos outils (Slack, Jira, Teams). Un rapport simple chaque jour. Zéro charge administrative pour vous. Vous vous concentrez sur votre produit, pas sur la gestion de projet.
+              Accédez à une squad senior complète pour le prix d'un seul développeur junior à Paris. Un modèle simple, sans frais cachés.
             </p>
           </motion.div>
           
