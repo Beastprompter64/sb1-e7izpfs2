@@ -17,6 +17,7 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import GoogleCloudLandingPage from './pages/GoogleCloudLandingPage';
 import MagentoLandingPage from './pages/MagentoLandingPage';
+import MobileLandingPage from './pages/MobileLandingPage';
 
 const GlobalStyles = () => (
   <style>{`
@@ -459,6 +460,7 @@ function App() {
         } />
         <Route path="/nos-cas-d-usages/google-cloud" element={<GoogleCloudLandingPage />} />
         <Route path="/nos-cas-d-usages/magento" element={<MagentoLandingPage />} />
+        <Route path="/nos-cas-d-usages/mobile" element={<MobileLandingPage />} />
       </Routes>
       <Footer />
     </Router>

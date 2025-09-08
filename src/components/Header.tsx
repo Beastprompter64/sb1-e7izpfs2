@@ -21,6 +21,11 @@ const Header: React.FC = () => {
       title: "Migration Magento",
       description: "Passez à une stack moderne",
       href: "/nos-cas-d-usages/magento"
+    },
+    {
+      title: "Applications Mobiles",
+      description: "Flutter & React Native en 30 jours",
+      href: "/nos-cas-d-usages/mobile"
     }
   ];
 
