@@ -26,6 +26,11 @@ const Header: React.FC = () => {
       title: "Applications Mobiles",
       description: "Flutter & React Native en 30 jours",
       href: "/nos-cas-d-usages/mobile"
+    },
+    {
+      title: "SmartOps - IT Critique",
+      description: "Supervision 24/7 et cybersécurité managée",
+      href: "/nos-cas-d-usages/smartops"
     }
   ];
 
