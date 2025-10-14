@@ -49,7 +49,7 @@ const GoogleCloudHero: React.FC = () => {
 
           <div className="mt-10 fade-in fade-in-delay-3">
             <a 
-              href="https://calendly.com/digitalfactory-etechconsulting-mg-com-gtempaccount/30min" 
+              href="https://calendly.com/etechconconsulting/30-minutes-avec-nos-experts-boostez-vos-idees" 
               target="_blank"
               rel="noopener noreferrer"
               className="hero-cta-primary inline-block rounded-md px-8 py-4 text-lg font-semibold text-white shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
@@ -474,7 +474,7 @@ const DiscoveryOfferSection: React.FC = () => {
           </div>
           
           <a 
-            href="https://calendly.com/digitalfactory-etechconsulting-mg-com-gtempaccount/30min"
+            href="https://calendly.com/etechconconsulting/30-minutes-avec-nos-experts-boostez-vos-idees"
             target="_blank"
             rel="noopener noreferrer"
             className="gradient-button inline-block"
